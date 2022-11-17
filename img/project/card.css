@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segeo UI", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #eee;
+}
+
+.card {
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.image {
+    width: 100%;
+    border-radius: 20px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.content {
+    margin-top: 1rem;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
+    padding: 0 .8rem;
+}
+
+.tag-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: .3rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-transform: capitalize;
+    color: #777;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.card-paragraph {
+    line-height: 1.7;
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.btn-container {
+    margin: .8rem 0;
+    display: flex;
+    justify-content: center;
+}
+/* just color picker */
+.card-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: rgb(67, 118, 251);
+    background-color: rgba(67, 118, 251, .1);
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-decoration: none;
+    /* transition: background-color .5s ease-in-out, color .5s ease-in-out; */
+    transition: all .5s ease-in-out;
+}
+
+.card-btn:hover {
+    background-color: rgb(67, 118, 251);
+    color: #fff;
+}

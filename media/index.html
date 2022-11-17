@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+    <!-- Audio -->
+    <audio src="./533.mp3" controls muted autoplay>
+        Your browser does not support audio
+    </audio>
+
+    <!-- Video -->
+    <video src="./video.mp4" controls width="300" height="300">
+        Your browser does not support videos
+    </video>
+
+    <!-- Adding multiple types -->
+    <video controls>
+        <source src="./video.mp4" type="video/mp4" />
+    </video>
+
+    <audio controls>
+        <source src="./533.mp3" type="audio/mp3" />
+        <!-- <source src="./533.ogg type="audio/ogg" /> -->
+    </audio>
+
+    <ul>
+        <li>
+            <a href="./533.mp3" download="a">Download this music</a>
+        </li>
+    </ul>
+</body>
+</html>

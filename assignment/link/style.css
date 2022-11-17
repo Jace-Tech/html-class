@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    background-color: #eee;
+}
+
+.container {
+    max-width: 800px;
+    padding: 2rem;
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto; /* The right and left will have same margin, thereby pushing the element in the middle */
+}
+
+/* NEW PROPERTIES ADDED */
+/* font-size: It increases or decreases the size of the text base on the value; [ units => (px, rem ...etc) ]; eg. 12px - small text | 50px - bigger text */
+/* line-height: It increases or decreases the vertical space between your text; eg. 1 - small | 2 - wide;  MORE DETAILS :=> https://helpx.adobe.com/incopy/using/leading.html  */
+
+h2 {
+    /* 1rem = 16px */
+
+    font-size: 3rem; /* 3rem = 48px */
+    margin: 2rem 0; 
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #eee;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+ul {
+    margin-top: 2rem;
+    list-style: none;
+}
+
+li {
+    margin-bottom: .5rem;
+}

@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: moveX;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveX {
+    from {
+        left: 0px;
+        top: 0;
+        background-color: yellow;
+    }
+
+    25% {
+        top: 0;
+        left: 400px;
+        background-color: blue;
+    }
+
+    75% {
+        top: 400px;
+        left: 400px;
+        background-color: red;
+    }
+
+    100%{
+        top: 400px;
+        left: 800px;
+        background-color: green;
+    }
+}

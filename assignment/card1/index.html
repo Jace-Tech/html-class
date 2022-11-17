@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Card 1</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            body {
+                height: 100vh;
+                display: flex;
+                background-color: lightblue;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .card {
+                width: 380px;
+                min-height: 500px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card-image-container {
+                flex: 1;
+                position: relative;
+            }
+
+            /* Card Image Section */
+            .card-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .card-tabs {
+                list-style: none;
+                display: flex;
+                gap: 1rem;
+                padding: 1rem;
+                position: absolute;
+                left: 0;
+                color: #fff;
+                bottom: 0;
+            }
+
+            .card-text-container {
+                padding: 1.2rem 1rem;
+                background-color: #fff;
+                display: flex;
+            }
+
+            .author-pic {
+                width: 50px;
+                height: 50px;
+                object-fit:cover;
+                border-radius: 50%;
+                margin-right: .5rem;
+            }
+
+            .card-title {
+                font-weight: 600;
+            }
+
+            .card-text {
+                color: #999;
+                margin-top: .2rem;
+            }
+
+            .card-text > i {
+                font-weight: 500;
+            }
+
+            .overlay {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to top, rgba(0, 0, 0, .8), transparent, transparent )
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="card">
+            <div class="card-image-container">
+                <div class="overlay"></div>
+                <img src="./slide10.jpg" alt="" class="card-image">
+                <ul class="card-tabs">
+                    <li class="tab-item">
+                        <i class="fa fa-eye"></i>
+                        <span class="tab-text">2350</span>
+                    </li>
+
+                    <li class="tab-item">
+                        <i class="fa fa-comment"></i>
+                        <span class="tab-text">624</span>
+                    </li>
+
+                    <li class="tab-item">
+                        <i class="fa fa-download"></i>
+                        <span class="tab-text">1470</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-text-container">
+                <img src="./person.jpg" alt="" class="author-pic">
+                <div class="author-details">
+                    <h2 class="card-title">White Mountains</h2>
+                    <p class="card-text">by <i>Joseph Therrien</i></p>
+                </div>
+            </div>
+        </div>
+        <!-- For the icons -->
+        <script src="./all.js"></script>
+    </body>
+</html>

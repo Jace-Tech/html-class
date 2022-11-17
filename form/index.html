@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="GET" action="">
+        <div class="">
+            <label for="name">Firstname</label>
+            <input id="name" type="text" name="name" maxlength="5" required />
+        </div>
+        
+        <div class="">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" />
+        </div>
+
+        <div class="">
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" name="phone" />
+        </div>
+
+        <div class="">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" />
+        </div>
+
+        <!-- Chosing Options in a form -->
+        <div class="">
+            <p>Favorite Games</p>
+            <div class="">
+                <label for="volleyball">
+                    <span>Volleyball</span>
+                    <input type="checkbox" id="volleyball" value="volleyball" name="games">
+                </label>
+
+                <label for="basketball">
+                    <span>Basket Ball</span>
+                    <input type="checkbox" id="basketball" value="basketball" name="games">
+                </label>
+
+                <label for="lawn-tennis">
+                    <span>Lawn Tennis</span>
+                    <input type="checkbox" id="lawn-tennis" value="lawn-tennis" name="games">
+                </label>
+            </div>
+        </div>
+
+        <div class="">
+            <p> Gender</p>
+            <div class="">
+                <label for="male">
+                    <span>Male</span>
+                    <input type="radio" id="male" value="male" name="gender">
+                </label>
+
+                <label for="female">
+                    <span>Female</span>
+                    <input type="radio" id="female" value="female" name="gender">
+                </label>
+            </div>
+        </div>
+
+        <div class="">
+            <label for="country">Country</label>
+            <select name="country" id="country" >
+                <option value="" disabled selected>Select your country</option>
+                <option value="nigeria">Nigeria</option>
+                <option value="ghana">Ghana</option>
+                <option value="south-africa">South Africa</option>
+            </select>
+        </div>
+
+        <!-- File Fields -->
+        <div class="">
+            <label for="image">File</label>
+            <!-- <input type="file" accept=".jpg, .png" name="picture" id="image"> -->
+            <input type="file" accept="image/*" multiple name="picture" id="image">
+        </div>
+
+        <!-- Date Time Fields -->
+        <div class="">
+            <label for="date">Birth Date</label>
+            <input type="date" id="date" name="birth-date">
+        </div>
+
+        <div class="">
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time">
+        </div>
+
+        <div class="">
+            <label for="datetime">DateTime</label>
+            <input type="datetime" id="datetime" name="datetime">
+        </div>
+
+        <!-- Others -->
+        <div class="">
+            <input type="hidden" name="student_id" value="student_001">
+        </div>
+
+        <div class="">
+            <input type="url" name="link" value="https://www.google.com">
+        </div>
+
+        <div class="">
+            <label for="volume">Volume</label>
+            <input type="range" name="volume" min="0" max="100" value="50" id="">
+        </div>
+
+        <!-- Submit -->
+        <!-- <input type="submit" name="submit" value="Submit"> -->
+        <button type="submit">Submit</button>
+
+        <!-- Reset -->
+        <!-- <input type="reset" value="Reset Form" /> -->
+        <button type="reset">Reset</button>
+
+        <!-- http://127.0.0.1:5500/form/index.html?
+            name=sassedh&
+            email=test%40test.com&
+            phone=hhhh&
+            password=hhh&
+            games=volleyball&
+            gender=male&
+            country=nigeria&
+            birth-date=2022-11-18&
+            time=&
+            datetime=&
+            student_id=student_001
+            &link=https%3A%2F%2Fwww.google.com&
+            volume=50 -->
+
+    </form>
+</body>
+</html>

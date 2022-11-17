@@ -1,0 +1,35 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .item {
+            max-width: 80px;
+            width: 30px;
+            min-width: 500px;
+            margin: 20px;
+            padding: 30px;
+        }
+        
+        .heading {
+            margin-bottom: 15px;
+        }
+
+        .blue {
+
+            background-color: rgba(10, 149, 255, .1);
+            border-left: 5px solid rgb(10, 149, 255);
+        }
+        
+        .orange {
+            border-left: 5px solid rgb(209, 84, 78);
+            background-color: rgba(209, 84, 78, .1);
+        }
+
+    

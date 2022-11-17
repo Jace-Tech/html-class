@@ -1,0 +1,58 @@
+/*
+ol {
+    list-style: upper-roman;
+    color: red;
+}
+
+li {
+    color: blue;
+}
+
+.second {
+    color: purple;
+}
+
+#first {
+    font-size: 20px;
+}
+
+* {
+    text-decoration: underline;
+}
+
+h1, h2, h3, 
+h4, h5, h6 {
+    color: skyblue;
+}*/
+
+
+li {
+    color: #ff0000;
+}
+
+/* Child selector */
+ul li {
+
+}
+/* Direct child selector */
+ul > li {
+    color: brown;
+}
+
+/* COLORS */
+/* HEX - Hexadecimals [ 0 - f ] */
+/* red - 00 green - 00 blue - 00 */
+
+/* #000000 - black */
+/* #ff0000 - red */
+/* #0000ff - blue */
+/* #00ff00 - green */
+/* colors.io */
+* {
+    color: #2aacdb;
+}
+
+/* RGB() red, green, blue [ 0 - 255 ] */
+* {
+    color: rgb(53, 96, 149);
+}

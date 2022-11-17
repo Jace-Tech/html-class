@@ -1,0 +1,121 @@
+/* RESETS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* 992px - Tablet [LANDSCAPE] */
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 15px;
+    }
+} 
+
+/* 768px - Tablet [PORTRAIT MODE] */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+} 
+
+body {
+    background-color: #eee;
+}
+
+header {
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+}
+
+.burger {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: .3rem;
+    cursor: pointer;
+    justify-content: center;
+    width: fit-content;
+    border: none;
+    background-color: transparent;
+    padding: .3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+}
+
+.burger > span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background-color: #999;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+.logo {
+    /* font-family: "Open Sans"; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+li {
+    margin-right: 10px;
+}
+
+li > a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .85rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: .5rem;
+    letter-spacing: 1px;
+    color: #999;
+    transition: color .4s ease-in-out;
+}
+
+li > a:hover, li.active > a  {
+    color: orangered;
+}
+
+/*PIC:  https://www.pexels.com/search/living%20room/ */
+
+
+/* Applies a style to all A element that the user have clicked on [visited] */
+/* a:visited { */
+    /* Add your codes here */
+/* } */
+/* Applies a style to all A element that the user have not yet clicked on [visited] */
+/* a:link { */
+    /* Add your codes here */
+/* } */
+
+/* Applies a style to the element when its being clicked on */
+/* a:active {
+    font-size: 3rem;
+} */

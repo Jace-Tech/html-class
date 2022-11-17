@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image</title>
+        <style>
+            body {
+                display: flex;
+                gap: 2rem;
+            }
+            .img-1, .img-2 {
+                width: 100%;
+                height: 100%;
+            }
+
+            .img-container-1, .img-container-2{
+                max-width: 300px;
+                height: 400px;
+                border: 3px solid black;
+            }
+
+            .img-1 {
+                object-fit: cover;
+            }
+
+            .img-2 {
+                object-fit: contain;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="img-container-1">
+            <img class="img-1" src="./image/house1.jpg" alt="house Image" />
+        </div>
+
+        <div class="img-container-2">
+            <img class="img-2" src="./image/house1.jpg" alt="house Image" />
+        </div>
+
+        <script type="text/javascript">
+            var _scq = _scq || [];
+            var _scs = _scs || {};
+            _scs.teamId = "4V4k1IK5JswqwiiB9B9GIt";
+         
+            (function() {
+              var dc = document.createElement('script');
+              dc.type = 'text/javascript';
+              dc.async = true;
+              dc.src = '//cdn.sendx.io/prod/4V4k1IK5JswqwiiB9B9GIt.js';
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(dc, s);
+            })();
+           </script>
+
+        <!-- <script src="../test.js"></script> -->
+    </body>
+</html>
